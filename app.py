@@ -11,51 +11,120 @@ st.title("🚀 EAST Product Hub")
 st.markdown("""
 ### Welcome to EAST Product Hub
 
-Learn everything about Progress products:
+Your one-stop learning portal for Progress products.
 
-✅ Product Overview
+Learn:
 
-✅ Business Purpose
+✅ What the product does
 
-✅ Opportunity Process
+✅ Why customers use it
 
-✅ Quote Process
+✅ Business purpose
 
-✅ Asset Process
+✅ Opportunity process
 
-✅ Renewal Process
+✅ Quote process
 
-✅ Common Support Requests
+✅ Asset process
+
+✅ Renewal process
+
+✅ Common support scenarios
 
 ✅ Ask EAST AI
 """)
 
-products = [
-    "ShareFile",
-    "Telerik",
-    "MOVEit",
-    "MarkLogic",
-    "OpenEdge",
-    "LoadMaster",
-    "Flowmon",
-    "WhatsUp Gold",
-    "Chef"
-]
+# Product Categories
 
-selected = st.selectbox(
+products = {
+    "Digital Experience": [
+        "ShareFile",
+        "MOVEit",
+        "Podio",
+        "Kendo UI",
+        "Telerik",
+        "Sitefinity Cloud",
+        "Sitefinity Insight",
+        "Ucommerce",
+        "Test Studio",
+        "Fiddler Everywhere",
+        "ThemeBuilder"
+    ],
+    "Infrastructure Management": [
+        "LoadMaster",
+        "Flowmon",
+        "WhatsUp Gold",
+        "Opsmith",
+        "Chef",
+        "Chef Infrastructure",
+        "Chef Desktop",
+        "Chef App Delivery",
+        "Chef Compliance",
+        "Chef 360"
+    ],
+    "Data & AI": [
+        "MarkLogic",
+        "Semaphore",
+        "OpenEdge",
+        "DataDirect Connectors",
+        "Hybrid Data Pipeline",
+        "OpenAccess",
+        "Agentic RAG",
+        "Progress Data Platform"
+    ],
+    "Decisioning": [
+        "Corticon.js"
+    ],
+    "File Transfer": [
+        "WS_FTP",
+        "Automate MFT"
+    ]
+}
+
+category = st.selectbox(
+    "Select Category",
+    list(products.keys())
+)
+
+product = st.selectbox(
     "Select Product",
-    products
+    products[category]
 )
 
-if selected:
-    st.success(f"Selected Product: {selected}")
+st.success(f"Selected Product: {product}")
 
-st.subheader("🤖 Ask EAST AI")
+st.divider()
 
-question = st.text_input(
-    "Ask a product question"
-)
+st.subheader("📖 Product Overview")
 
-if question:
-    st.write(f"Question: {question}")
+st.info(f"""
+Selected Product: {product}
 
+This section will provide:
+
+• What the product does
+
+• Business value
+
+• Key features
+
+• Typical customers
+
+• Opportunity workflow
+
+• Quote workflow
+
+• Asset workflow
+
+• Renewal workflow
+
+• Related systems
+
+• EAST support ownership
+""")
+
+st.divider()
+
+st.subheader("🔄 Business Process")
+
+st.markdown("""
