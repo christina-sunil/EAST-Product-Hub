@@ -11,30 +11,24 @@ st.title("🚀 EAST Product Hub")
 st.markdown("""
 ### Welcome to EAST Product Hub
 
-Your one-stop learning portal for Progress products.
+Learn everything about Progress products:
 
-Learn:
+✅ Product Overview
 
-✅ What the product does
+✅ Business Purpose
 
-✅ Why customers use it
+✅ Opportunity Process
 
-✅ Business purpose
+✅ Quote Process
 
-✅ Opportunity process
+✅ Asset Process
 
-✅ Quote process
+✅ Renewal Process
 
-✅ Asset process
-
-✅ Renewal process
-
-✅ Common support scenarios
+✅ Common Support Requests
 
 ✅ Ask EAST AI
 """)
-
-# Product Categories
 
 products = {
     "Digital Experience": [
@@ -50,6 +44,7 @@ products = {
         "Fiddler Everywhere",
         "ThemeBuilder"
     ],
+
     "Infrastructure Management": [
         "LoadMaster",
         "Flowmon",
@@ -62,6 +57,7 @@ products = {
         "Chef Compliance",
         "Chef 360"
     ],
+
     "Data & AI": [
         "MarkLogic",
         "Semaphore",
@@ -72,9 +68,11 @@ products = {
         "Agentic RAG",
         "Progress Data Platform"
     ],
+
     "Decisioning": [
         "Corticon.js"
     ],
+
     "File Transfer": [
         "WS_FTP",
         "Automate MFT"
@@ -97,8 +95,8 @@ st.divider()
 
 st.subheader("📖 Product Overview")
 
-st.info(f"""
-Selected Product: {product}
+st.write(f"""
+**Product:** {product}
 
 This section will provide:
 
@@ -127,4 +125,55 @@ st.divider()
 
 st.subheader("🔄 Business Process")
 
+st.code("""
+Lead
+↓
+Opportunity
+↓
+Quote
+↓
+Order
+↓
+Provisioning
+↓
+Asset
+↓
+Renewal
+""")
+
+st.divider()
+
+st.subheader("🎫 Common Support Requests")
+
 st.markdown("""
+- License activation
+- Contact updates
+- Opportunity updates
+- Quote corrections
+- Asset creation
+- Renewal assistance
+- Customer access issues
+- Billing questions
+""")
+
+st.divider()
+
+st.subheader("🤖 Ask EAST AI")
+
+question = st.text_input(
+    "Ask a question about the selected product"
+)
+
+if question:
+    st.write("Question:")
+    st.write(question)
+
+    st.success(
+        "Future version: AI will answer using product documentation, SOPs, KB articles and EAST knowledge."
+    )
+
+st.divider()
+
+st.caption(
+    "EAST Product Hub | Progress Product Learning & Support Portal"
+)
