@@ -55,3 +55,51 @@ products = {
         "Chef Desktop",
         "Chef App Delivery",
         "Chef Compliance",
+        "Chef 360"
+    ],
+
+    "Data & AI": [
+        "MarkLogic",
+        "Semaphore",
+        "OpenEdge",
+        "DataDirect Connectors",
+        "Hybrid Data Pipeline",
+        "OpenAccess",
+        "Agentic RAG",
+        "Progress Data Platform"
+    ],
+
+    "Decisioning": [
+        "Corticon.js"
+    ],
+
+    "File Transfer": [
+        "WS_FTP",
+        "Automate MFT"
+    ]
+}
+
+category = st.selectbox(
+    "Select Category",
+    list(products.keys())
+)
+
+product = st.selectbox(
+    "Select Product",
+    products[category]
+)
+
+st.success(f"Selected Product: {product}")
+
+st.divider()
+
+st.subheader("📖 Product Knowledge")
+
+if product == "ShareFile":
+    try:
+        with open("data/sharefile.txt", "r") as file:
+            content = file.read()
+
+        st.text(content)
+
+    except
