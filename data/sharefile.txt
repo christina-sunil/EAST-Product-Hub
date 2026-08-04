@@ -1,0 +1,38 @@
+Product Name: ShareFile
+
+Overview:
+ShareFile is a secure document sharing and collaboration platform.
+
+Why Customers Use It:
+Secure file sharing
+Client collaboration
+Workflow automation
+Electronic signatures
+
+Common Users:
+Customers
+Partners
+Sales Teams
+Operations Teams
+
+Business Process:
+Lead
+Opportunity
+Quote
+Order
+Provisioning
+Asset
+Renewal
+
+Related Systems:
+Salesforce
+ServiceNow
+OCPQ
+SMARTe
+
+Common Support Requests:
+License Activation
+Contact Updates
+Asset Creation
+Renewals
+Quote Corrections
