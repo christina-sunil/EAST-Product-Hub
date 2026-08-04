@@ -14,19 +14,12 @@ st.markdown("""
 Learn everything about Progress products:
 
 ✅ Product Overview
-
 ✅ Business Purpose
-
 ✅ Opportunity Process
-
 ✅ Quote Process
-
 ✅ Asset Process
-
 ✅ Renewal Process
-
 ✅ Common Support Requests
-
 ✅ Ask EAST AI
 """)
 
@@ -36,46 +29,18 @@ products = {
         "MOVEit",
         "Podio",
         "Kendo UI",
-        "Telerik",
-        "Sitefinity Cloud",
-        "Sitefinity Insight",
-        "Ucommerce",
-        "Test Studio",
-        "Fiddler Everywhere",
-        "ThemeBuilder"
+        "Telerik"
     ],
-
-    "Infrastructure Management": [
+    "Infrastructure": [
         "LoadMaster",
         "Flowmon",
         "WhatsUp Gold",
-        "Opsmith",
-        "Chef",
-        "Chef Infrastructure",
-        "Chef Desktop",
-        "Chef App Delivery",
-        "Chef Compliance",
-        "Chef 360"
+        "Chef"
     ],
-
     "Data & AI": [
         "MarkLogic",
-        "Semaphore",
         "OpenEdge",
-        "DataDirect Connectors",
-        "Hybrid Data Pipeline",
-        "OpenAccess",
-        "Agentic RAG",
-        "Progress Data Platform"
-    ],
-
-    "Decisioning": [
-        "Corticon.js"
-    ],
-
-    "File Transfer": [
-        "WS_FTP",
-        "Automate MFT"
+        "Semaphore"
     ]
 }
 
@@ -102,4 +67,23 @@ if product == "ShareFile":
 
         st.text(content)
 
-    except
+    except Exception as e:
+        st.error(f"Unable to load ShareFile information: {e}")
+
+else:
+    st.info(f"Knowledge page for {product} coming soon.")
+
+st.divider()
+
+st.subheader("🤖 Ask EAST AI")
+
+question = st.text_input(
+    "Ask a question about the product"
+)
+
+if question:
+    st.write(question)
+
+st.divider()
+
+st.caption("EAST Product Hub")
