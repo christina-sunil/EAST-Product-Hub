@@ -18,60 +18,57 @@ Learn everything about Progress products:
 
 ✅ Product Overview
 
-✅ Business Purpose
+✅ Common Users
 
-✅ Opportunity Process
+✅ Related Systems
 
-✅ Quote Process
+✅ Support Areas
 
-✅ Asset Process
-
-✅ Renewal Process
-
-✅ Common Support Requests
+✅ Standard Business Process
 
 ✅ Ask EAST AI
 """)
 
-# Read CSV File
-df = pd.read_csv("data/products.csv")
+try:
+    # Read Product Data
+    df = pd.read_csv("data/products.csv")
 
-# Product Selection
-product = st.selectbox(
-    "Select Product",
-    sorted(df["Product"].unique())
-)
+    # Product Selection
+    product = st.selectbox(
+        "Select Product",
+        sorted(df["Product"].unique())
+    )
 
-# Get Product Information
-selected = df[df["Product"] == product].iloc[0]
+    # Selected Product Information
+    selected = df[df["Product"] == product].iloc[0]
 
-st.success(f"Selected Product: {product}")
+    st.success(f"Selected Product: {product}")
 
-st.divider()
+    st.divider()
 
-# Product Information
-col1, col2 = st.columns(2)
+    # Product Information
+    col1, col2 = st.columns(2)
 
-with col1:
-    st.subheader("📖 Product Overview")
-    st.info(selected["Overview"])
+    with col1:
+        st.subheader("📖 Product Overview")
+        st.info(selected["Overview"])
 
-    st.subheader("👥 Common Users")
-    st.info(selected["Users"])
+        st.subheader("👥 Common Users")
+        st.info(selected["Users"])
 
-with col2:
-    st.subheader("🔗 Related Systems")
-    st.info(selected["Systems"])
+    with col2:
+        st.subheader("🔗 Related Systems")
+        st.info(selected["Systems"])
 
-    st.subheader("🎫 Support Areas")
-    st.info(selected["Support"])
+        st.subheader("🎫 Support Areas")
+        st.info(selected["Support"])
 
-st.divider()
+    st.divider()
 
-# Business Process
-st.subheader("🔄 Standard Business Process")
+    # Business Process
+    st.subheader("🔄 Standard Business Process")
 
-st.code("""
+    st.code("""
 Lead
 ↓
 Opportunity
@@ -87,12 +84,12 @@ Asset
 Renewal
 """)
 
-st.divider()
+    st.divider()
 
-# EAST Support Section
-st.subheader("🛠 EAST Support Responsibilities")
+    # Support Section
+    st.subheader("🛠 EAST Support Responsibilities")
 
-st.markdown("""
+    st.markdown("""
 - Opportunity Support
 - Quote Support
 - Asset Creation
@@ -103,35 +100,38 @@ st.markdown("""
 - Escalations
 """)
 
-st.divider()
+    st.divider()
 
-# AI Assistant Section
-st.subheader("🤖 Ask EAST AI")
+    # AI Section
+    st.subheader("🤖 Ask EAST AI")
 
-st.markdown("""
+    st.markdown("""
 Example Questions:
 
 • What does this product do?
 
-• Who uses this product?
+• Why do customers use it?
 
 • What systems are involved?
 
-• How does Opportunity work?
+• How does the Opportunity process work?
 
-• How does Quote work?
+• How does the Quote process work?
 
-• How does Renewal work?
-
-• What does EAST support?
+• What support does EAST provide?
 """)
 
-question = st.text_input(
-    "Ask a question about the selected product"
-)
+    question = st.text_input(
+        "Ask a question about the selected product"
+    )
 
-if question:
-    st.success("Future AI response will be displayed here")
+    if question:
+        st.success(
+            f"Question received: {question}"
+        )
+
+except Exception as e:
+    st.error(f"Application Error: {e}")
 
 st.divider()
 
