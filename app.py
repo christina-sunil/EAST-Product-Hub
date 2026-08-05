@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
 
+# Page Setup
 st.set_page_config(
     page_title="EAST Product Hub",
     page_icon="🚀",
     layout="wide"
 )
 
+# Header
 st.title("🚀 EAST Product Hub")
 
 st.markdown("""
@@ -31,36 +33,42 @@ Learn everything about Progress products:
 ✅ Ask EAST AI
 """)
 
-# Load CSV
+# Read CSV File
 df = pd.read_csv("data/products.csv")
 
-# Product selection
+# Product Selection
 product = st.selectbox(
     "Select Product",
     sorted(df["Product"].unique())
 )
 
-# Get selected row
+# Get Product Information
 selected = df[df["Product"] == product].iloc[0]
 
 st.success(f"Selected Product: {product}")
 
 st.divider()
 
-st.subheader("📖 Product Overview")
-st.write(selected["Overview"])
+# Product Information
+col1, col2 = st.columns(2)
 
-st.subheader("👥 Common Users")
-st.write(selected["Users"])
+with col1:
+    st.subheader("📖 Product Overview")
+    st.info(selected["Overview"])
 
-st.subheader("🔗 Related Systems")
-st.write(selected["Systems"])
+    st.subheader("👥 Common Users")
+    st.info(selected["Users"])
 
-st.subheader("🎫 Support Areas")
-st.write(selected["Support"])
+with col2:
+    st.subheader("🔗 Related Systems")
+    st.info(selected["Systems"])
+
+    st.subheader("🎫 Support Areas")
+    st.info(selected["Support"])
 
 st.divider()
 
+# Business Process
 st.subheader("🔄 Standard Business Process")
 
 st.code("""
@@ -81,17 +89,52 @@ Renewal
 
 st.divider()
 
+# EAST Support Section
+st.subheader("🛠 EAST Support Responsibilities")
+
+st.markdown("""
+- Opportunity Support
+- Quote Support
+- Asset Creation
+- License Activation
+- Renewals
+- Customer Requests
+- Data Updates
+- Escalations
+""")
+
+st.divider()
+
+# AI Assistant Section
 st.subheader("🤖 Ask EAST AI")
+
+st.markdown("""
+Example Questions:
+
+• What does this product do?
+
+• Who uses this product?
+
+• What systems are involved?
+
+• How does Opportunity work?
+
+• How does Quote work?
+
+• How does Renewal work?
+
+• What does EAST support?
+""")
 
 question = st.text_input(
     "Ask a question about the selected product"
 )
 
 if question:
-    st.info(
-        f"Future AI Response for: {question}"
-    )
+    st.success("Future AI response will be displayed here")
 
 st.divider()
 
-st.caption("EAST Product Hub")
+st.caption(
+    "EAST Product Hub | Progress Product Learning & Support Portal"
+)
