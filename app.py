@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 
 st.set_page_config(
     page_title="EAST Product Hub",
@@ -9,89 +8,38 @@ st.set_page_config(
 
 st.title("🚀 EAST Product Hub")
 
-st.markdown("""
-### Welcome to EAST Product Hub
+st.write("Welcome to EAST Product Hub")
 
-Learn everything about Progress products:
+products = [
+    "ShareFile",
+    "MOVEit",
+    "Telerik",
+    "MarkLogic",
+    "OpenEdge",
+    "LoadMaster",
+    "Chef",
+    "Flowmon",
+    "WhatsUp Gold"
+]
 
-✅ Product Overview
-
-✅ Business Purpose
-
-✅ Opportunity Process
-
-✅ Quote Process
-
-✅ Asset Process
-
-✅ Renewal Process
-
-✅ Common Support Requests
-
-✅ Ask EAST AI
-""")
-
-# Load CSV
-df = pd.read_csv("data/products.csv")
-
-# Product selection
-product = st.selectbox(
+selected = st.selectbox(
     "Select Product",
-    sorted(df["Product"].unique())
+    products
 )
 
-# Get selected row
-selected = df[df["Product"] == product].iloc[0]
+st.success(f"Selected Product: {selected}")
 
-st.success(f"Selected Product: {product}")
+st.subheader("Product Overview")
 
-st.divider()
+st.write(
+    "This is the EAST Product Hub. Product knowledge will be displayed here."
+)
 
-st.subheader("📖 Product Overview")
-st.write(selected["Overview"])
-
-st.subheader("👥 Common Users")
-st.write(selected["Users"])
-
-st.subheader("🔗 Related Systems")
-st.write(selected["Systems"])
-
-st.subheader("🎫 Support Areas")
-st.write(selected["Support"])
-
-st.divider()
-
-st.subheader("🔄 Standard Business Process")
-
-st.code("""
-Lead
-↓
-Opportunity
-↓
-Quote
-↓
-Order
-↓
-Provisioning
-↓
-Asset
-↓
-Renewal
-""")
-
-st.divider()
-
-st.subheader("🤖 Ask EAST AI")
+st.subheader("Ask EAST AI")
 
 question = st.text_input(
-    "Ask a question about the selected product"
+    "Ask a question"
 )
 
 if question:
-    st.info(
-        f"Future AI Response for: {question}"
-    )
-
-st.divider()
-
-st.caption("EAST Product Hub")
+    st.write(f"You asked: {question}")
