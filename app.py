@@ -33,9 +33,9 @@ st.success(f"Selected Product: {selected}")
 
 if selected == "ShareFile":
 
-    st.subheader("📘 What is ShareFile?")
+st.subheader("📘 What is ShareFile?")
 
-    st.subheader("🌐 Progress Product Portfolio")
+st.subheader("🌐 Progress Product Portfolio")
 st.markdown("""
 
 ### Explore Progress Products
@@ -97,17 +97,17 @@ st.write("""
     • Improved security and compliance
     """)
 
-    st.subheader("⚙️ How It Works")
+st.subheader("⚙️ How It Works")
 
-    st.write("""
-    Users upload files and folders into ShareFile storage locations.
-    Files can then be securely shared using permissions, user accounts,
-    folders, and secure sharing links.
-    """)
+st.write("""
+Users upload files and folders into ShareFile storage locations.
+Files can then be securely shared using permissions, user accounts,
+folders, and secure sharing links.
+""")
 
-    st.subheader("🎫 Common EAST Tickets")
+st.subheader("🎫 Common EAST Tickets")
 
-    st.write("""
+st.write("""
     • Folder access issues
 
     • User login problems
@@ -121,9 +121,9 @@ st.write("""
     • Sync application issues
     """)
 
-    st.subheader("🔧 Basic Troubleshooting")
+st.subheader("🔧 Basic Troubleshooting")
 
-    st.write("""
+st.write("""
     1. Verify user account status
 
     2. Confirm correct permissions
@@ -137,9 +137,9 @@ st.write("""
     6. Review recent changes
     """)
 
-    st.subheader("⬆️ When To Escalate")
+st.subheader("⬆️ When To Escalate")
 
-    st.write("""
+st.write("""
     Escalate if:
 
     • Backend issue is suspected
@@ -153,7 +153,7 @@ st.write("""
     • Administrative intervention is required
     """)
 
-    st.subheader("📚 Useful KBs")
+st.subheader("📚 Useful KBs")
 
     st.markdown("""
 
@@ -163,7 +163,7 @@ st.write("""
 - [Order Services Published Articles](https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=Copy_of_Published_Articles)
 """)
 
-    st.subheader("💡 What I've Learned")
+st.subheader("💡 What I've Learned")
 
     st.write("""
     Add lessons learned from EAST tickets and customer cases here.
@@ -171,7 +171,7 @@ st.write("""
 
 else:
 
-    st.subheader("Product Overview")
+st.subheader("Product Overview")
 
     st.write(f"""
     Knowledge for {selected} will be added soon.
