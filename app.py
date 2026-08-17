@@ -259,23 +259,18 @@ if question:
     st.info(f"You asked: {question}")
 
 st.subheader("🎓 New Hire Learning Path")
-3
- 
-4
+
 st.write("""
-5
+
 Week 1
-6
+
 ...
-7
+
 Week 4
-8
+
 ...
-9
 """)
-10
- 
-11
+
 # =====================================================
 12
 # OPENEDGE
