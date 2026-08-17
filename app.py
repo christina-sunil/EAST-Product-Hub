@@ -77,11 +77,11 @@ Related Progress products include:
 - WhatsUp Gold
 """)
 
-    st.write("""
-    ShareFile is a secure file sharing and content collaboration platform.
-    Organizations use it to store, manage, and securely share files with employees,
-    customers, and business partners.
-    """)
+st.write("""
+ShareFile is a secure file sharing and content collaboration platform.
+Organizations use it to store, manage, and securely share files with employees,
+customers, and business partners.
+""")
 
     st.subheader("🎯 Why Customers Use It")
 
