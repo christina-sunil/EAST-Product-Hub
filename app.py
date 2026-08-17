@@ -7,14 +7,14 @@ st.set_page_config(
 )
 
 st.title("🚀 EAST Product Hub")
-
 st.write("Welcome to the EAST Product Hub")
 
 selected = st.selectbox(
     "Select Product",
     [
         "ShareFile",
-        "MOVEit"
+        "MOVEit",
+        "OpenEdge"
     ]
 )
 
@@ -26,17 +26,17 @@ st.success(f"Selected Product: {selected}")
 
 if selected == "ShareFile":
 
-    st.header("📘 ShareFile")
+    st.header("📁 ShareFile")
 
     st.subheader("What is ShareFile?")
 
     st.write("""
     ShareFile is a secure file sharing and content collaboration platform.
-    Organizations use it to securely store, manage, and share documents
-    with employees, customers, and partners.
+    Organizations use it to securely store, manage and share documents with
+    employees, customers and partners.
     """)
 
-    st.subheader("🧩 ShareFile Features")
+    st.subheader("🧩 Key Features")
 
     st.write("""
     • Secure File Sharing
@@ -60,20 +60,6 @@ if selected == "ShareFile":
     • File Sync
     """)
 
-    st.subheader("🎯 Why Customers Use ShareFile")
-
-    st.write("""
-    • Secure collaboration
-
-    • Share files externally
-
-    • Manage documents
-
-    • Improve customer experience
-
-    • Meet security requirements
-    """)
-
     st.subheader("🎫 Common EAST Tickets")
 
     st.write("""
@@ -88,20 +74,6 @@ if selected == "ShareFile":
     • Shared link issues
 
     • Sync issues
-    """)
-
-    st.subheader("🔧 Basic Troubleshooting")
-
-    st.write("""
-    1. Verify user account
-
-    2. Check folder permissions
-
-    3. Confirm group membership
-
-    4. Test another browser
-
-    5. Verify service availability
     """)
 
     st.subheader("📚 Knowledge Base")
@@ -132,13 +104,13 @@ if selected == "ShareFile":
 
 elif selected == "MOVEit":
 
-    st.header("📘 MOVEit")
+    st.header("📦 MOVEit")
 
     st.subheader("What is MOVEit?")
 
     st.write("""
     MOVEit is a Managed File Transfer (MFT) solution that securely transfers
-    sensitive files between systems, organizations, and users.
+    sensitive files between systems, organizations and users.
     """)
 
     st.subheader("🧩 MOVEit Features")
@@ -211,24 +183,10 @@ elif selected == "MOVEit":
     • Connectivity issues
     """)
 
-    st.subheader("🔧 Basic Troubleshooting")
-
-    st.write("""
-    1. Check logs
-
-    2. Verify credentials
-
-    3. Check connectivity
-
-    4. Verify certificates
-
-    5. Review automation tasks
-    """)
-
     st.subheader("📚 Knowledge Base")
 
-    st.write("""
-    Add MOVEit KB links here.
+    st.markdown("""
+    - [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
     """)
 
     st.subheader("🎓 New Hire Learning Path")
@@ -248,6 +206,101 @@ elif selected == "MOVEit":
     """)
 
 # =====================================================
+# OPENEDGE
+# =====================================================
+
+elif selected == "OpenEdge":
+
+    st.header("🖥️ OpenEdge")
+
+    st.subheader("What is OpenEdge?")
+
+    st.write("""
+    OpenEdge is Progress Software's application development platform and
+    database used to build, deploy and manage business-critical applications.
+    """)
+
+    st.subheader("🧩 OpenEdge Features")
+
+    st.write("""
+    • Application Development
+
+    • Relational Database
+
+    • Business Logic Processing
+
+    • Secure Data Management
+
+    • Scalability
+
+    • Cloud Deployment Support
+    """)
+
+    st.subheader("🎯 Why Customers Use OpenEdge")
+
+    st.write("""
+    • Build business applications
+
+    • Manage enterprise data
+
+    • Improve performance
+
+    • Support mission-critical workloads
+
+    • Long-term platform stability
+    """)
+
+    st.subheader("🏗️ OpenEdge Components")
+
+    st.write("""
+    • OpenEdge Database
+
+    • AppServer
+
+    • WebSpeed
+
+    • OpenEdge Management
+
+    • OpenEdge Studio
+    """)
+
+    st.subheader("🎫 Common EAST Tickets")
+
+    st.write("""
+    • Database connectivity issues
+
+    • Performance issues
+
+    • Application startup failures
+
+    • User access issues
+
+    • Backup and recovery questions
+    """)
+
+    st.subheader("📚 Knowledge Base")
+
+    st.markdown("""
+    - [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
+    """)
+
+    st.subheader("🎓 New Hire Learning Path")
+
+    st.write("""
+    Week 1
+    • Learn OpenEdge fundamentals
+
+    Week 2
+    • Understand OpenEdge architecture
+
+    Week 3
+    • Review common support cases
+
+    Week 4
+    • Learn troubleshooting and escalation
+    """)
+
+# =====================================================
 # ASK EAST AI
 # =====================================================
 
@@ -257,55 +310,3 @@ question = st.text_input("Ask a question")
 
 if question:
     st.info(f"You asked: {question}")
-
-st.subheader("🎓 New Hire Learning Path")
-
-st.write("""
-
-Week 1
-
-...
-
-Week 4
-
-...
-""")
-
-# =====================================================
-12
-# OPENEDGE
-13
-# =====================================================
-
-elif selected == "OpenEdge":
-
-st.header("🖥️ OpenEdge")
-
-st.subheader("What is OpenEdge?")
-
-st.write("""
-OpenEdge is Progress Software's application development platform
-and database used to build, deploy, and manage business-critical
-applications.""")
-
-st.subheader("🧩 OpenEdge Features")
-st.write("""
-
-• Application Development
-
-• Relational Database
-
-• Business Logic Processing
-
-• Secure Data Management
-
-• Scalability
-
-• Cloud Deployment Support
-""")
-
-st.subheader("📚 Knowledge Base")
-st.markdown("""
-- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
-""")
-
