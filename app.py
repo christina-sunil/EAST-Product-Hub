@@ -257,3 +257,53 @@ question = st.text_input("Ask a question")
 
 if question:
     st.info(f"You asked: {question}")
+
+st.subheader("🎓 New Hire Learning Path")
+3
+ 
+4
+st.write("""
+5
+Week 1
+6
+...
+7
+Week 4
+8
+...
+9
+""")
+10
+ 
+11
+# =====================================================
+12
+# OPENEDGE
+13
+# =====================================================
+
+elif selected == "OpenEdge":
+
+st.header("🖥️ OpenEdge")
+
+st.subheader("What is OpenEdge?")
+
+st.write(""
+OpenEdge is Progress Software's application development platform
+and database used to build, deploy, and manage business-critical
+applications.
+""")
+
+st.subheader("🧩 OpenEdge Features")
+st.write("""
+
+• Application Development
+
+• Relational Database
+
+• Business Logic Processing
+
+• Secure Data Management
+
+• Scalability
+
