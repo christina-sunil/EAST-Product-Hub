@@ -35,6 +35,48 @@ if selected == "ShareFile":
 
     st.subheader("📘 What is ShareFile?")
 
+    st.subheader("🌐 Progress Product Portfolio")
+st.markdown("""
+
+### Explore Progress Products
+ 
+- [View All Progress Products](https://www.progress.com/products)
+
+ShareFile is part of the Progress Digital Experience portfolio.
+
+Related Progress products include:
+
+- ShareFile
+
+- MOVEit
+
+- WS_FTP
+
+- Podio
+
+- Sitefinity
+
+- Telerik
+
+- Kendo UI
+
+- Test Studio
+
+- OpenEdge
+
+- MarkLogic
+
+- DataDirect
+
+- Chef
+
+- Flowmon
+
+- LoadMaster
+
+- WhatsUp Gold
+""")
+
     st.write("""
     ShareFile is a secure file sharing and content collaboration platform.
     Organizations use it to store, manage, and securely share files with employees,
