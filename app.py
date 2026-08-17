@@ -83,9 +83,9 @@ Organizations use it to store, manage, and securely share files with employees,
 customers, and business partners.
 """)
 
-    st.subheader("🎯 Why Customers Use It")
+st.subheader("🎯 Why Customers Use It")
 
-    st.write("""
+st.write("""
     • Secure file sharing
 
     • Client collaboration
