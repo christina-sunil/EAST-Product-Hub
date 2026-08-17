@@ -8,7 +8,7 @@ st.set_page_config(
 
 st.title("🚀 EAST Product Hub")
 
-st.write("Welcome to EAST Product Hub")
+st.write("Welcome to the EAST Product Hub")
 
 products = [
     "ShareFile",
@@ -29,63 +29,47 @@ selected = st.selectbox(
 
 st.success(f"Selected Product: {selected}")
 
-# Product Knowledge Section
+# SHAREFILE
 
 if selected == "ShareFile":
 
-st.subheader("📘 What is ShareFile?")
+    st.subheader("📘 What is ShareFile?")
 
-st.subheader("🌐 Progress Product Portfolio")
-st.markdown("""
+    st.write("""
+    ShareFile is a secure file sharing and content collaboration platform.
+    Organizations use it to store, manage, and securely share files with employees,
+    customers, and business partners.
+    """)
 
-### Explore Progress Products
- 
-- [View All Progress Products](https://www.progress.com/products)
+    st.subheader("🌐 Progress Product Portfolio")
 
-ShareFile is part of the Progress Digital Experience portfolio.
+    st.markdown("""
+    ### Explore Progress Products
 
-Related Progress products include:
+    - [View All Progress Products](https://www.progress.com/products)
 
-- ShareFile
+    Related Progress products include:
 
-- MOVEit
+    - ShareFile
+    - MOVEit
+    - WS_FTP
+    - Podio
+    - Sitefinity
+    - Telerik
+    - Kendo UI
+    - Test Studio
+    - OpenEdge
+    - MarkLogic
+    - DataDirect
+    - Chef
+    - Flowmon
+    - LoadMaster
+    - WhatsUp Gold
+    """)
 
-- WS_FTP
+    st.subheader("🎯 Why Customers Use It")
 
-- Podio
-
-- Sitefinity
-
-- Telerik
-
-- Kendo UI
-
-- Test Studio
-
-- OpenEdge
-
-- MarkLogic
-
-- DataDirect
-
-- Chef
-
-- Flowmon
-
-- LoadMaster
-
-- WhatsUp Gold
-""")
-
-st.write("""
-ShareFile is a secure file sharing and content collaboration platform.
-Organizations use it to store, manage, and securely share files with employees,
-customers, and business partners.
-""")
-
-st.subheader("🎯 Why Customers Use It")
-
-st.write("""
+    st.write("""
     • Secure file sharing
 
     • Client collaboration
@@ -97,20 +81,21 @@ st.write("""
     • Improved security and compliance
     """)
 
-st.subheader("⚙️ How It Works")
+    st.subheader("⚙️ How It Works")
 
-st.write("""
-Users upload files and folders into ShareFile storage locations.
-Files can then be securely shared using permissions, user accounts,
-folders, and secure sharing links.
-""")
+    st.write("""
+    Users upload files and folders into ShareFile storage locations.
 
-st.subheader("🎫 Common EAST Tickets")
+    Files can then be securely shared using permissions, folders,
+    user accounts, and secure sharing links.
+    """)
 
-st.write("""
+    st.subheader("🎫 Common EAST Tickets")
+
+    st.write("""
     • Folder access issues
 
-    • User login problems
+    • User login issues
 
     • Permission-related cases
 
@@ -121,25 +106,25 @@ st.write("""
     • Sync application issues
     """)
 
-st.subheader("🔧 Basic Troubleshooting")
+    st.subheader("🔧 Basic Troubleshooting")
 
-st.write("""
+    st.write("""
     1. Verify user account status
 
-    2. Confirm correct permissions
+    2. Confirm permissions
 
     3. Check folder ownership
 
-    4. Test in another browser
+    4. Test another browser
 
     5. Verify service availability
 
     6. Review recent changes
     """)
 
-st.subheader("⬆️ When To Escalate")
+    st.subheader("⬆️ When To Escalate")
 
-st.write("""
+    st.write("""
     Escalate if:
 
     • Backend issue is suspected
@@ -153,37 +138,128 @@ st.write("""
     • Administrative intervention is required
     """)
 
-st.subheader("📚 Useful KBs")
+    st.subheader("📚 Useful KBs")
 
     st.markdown("""
+    ### ShareFile Resources
 
-### ShareFile Resources
+    - [Order Services Published Articles](https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=Copy_of_Published_Articles)
+    """)
 
- 
-- [Order Services Published Articles](https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=Copy_of_Published_Articles)
-""")
-
-st.subheader("💡 What I've Learned")
+    st.subheader("🎓 New Hire Learning Path")
 
     st.write("""
-    Add lessons learned from EAST tickets and customer cases here.
+    Week 1
+    • Learn ShareFile fundamentals
+    • Review key terminology
+    • Read ShareFile KB articles
+
+    Week 2
+    • Understand common ticket types
+    • Learn troubleshooting basics
+
+    Week 3
+    • Handle simple access and permission cases
+    • Learn escalation paths
+
+    Week 4
+    • Review advanced cases
+    • Shadow senior engineers
     """)
 
-else:
+# MOVEIT
 
-st.subheader("Product Overview")
+elif selected == "MOVEit":
 
-    st.write(f"""
-    Knowledge for {selected} will be added soon.
+    st.subheader("📘 What is MOVEit?")
+
+    st.write("""
+    MOVEit is a managed file transfer (MFT) solution that securely transfers
+    sensitive files between users, systems, and organizations.
     """)
 
-# Ask EAST AI Section
+# TELERIK
 
-st.subheader("Ask EAST AI")
+elif selected == "Telerik":
 
-question = st.text_input(
-    "Ask a question"
-)
+    st.subheader("📘 What is Telerik?")
+
+    st.write("""
+    Telerik provides .NET and JavaScript developer tools, UI controls,
+    reporting, and productivity solutions.
+    """)
+
+# MARKLOGIC
+
+elif selected == "MarkLogic":
+
+    st.subheader("📘 What is MarkLogic?")
+
+    st.write("""
+    MarkLogic is an enterprise database platform used to store and manage
+    structured and unstructured data.
+    """)
+
+# OPENEDGE
+
+elif selected == "OpenEdge":
+
+    st.subheader("📘 What is OpenEdge?")
+
+    st.write("""
+    OpenEdge is an application development platform and database
+    for building business applications.
+    """)
+
+# LOADMASTER
+
+elif selected == "LoadMaster":
+
+    st.subheader("📘 What is LoadMaster?")
+
+    st.write("""
+    LoadMaster is a load balancing solution that improves
+    application performance, availability, and security.
+    """)
+
+# CHEF
+
+elif selected == "Chef":
+
+    st.subheader("📘 What is Chef?")
+
+    st.write("""
+    Chef is an infrastructure automation platform used to configure,
+    deploy, and manage servers and applications.
+    """)
+
+# FLOWMON
+
+elif selected == "Flowmon":
+
+    st.subheader("📘 What is Flowmon?")
+
+    st.write("""
+    Flowmon provides network monitoring, visibility,
+    performance analytics, and security insights.
+    """)
+
+# WHATSUP GOLD
+
+elif selected == "WhatsUp Gold":
+
+    st.subheader("📘 What is WhatsUp Gold?")
+
+    st.write("""
+    WhatsUp Gold is an IT infrastructure monitoring platform
+    used for monitoring networks, systems, servers, and applications.
+    """)
+
+# ASK EAST AI
+
+st.subheader("🤖 Ask EAST AI")
+
+question = st.text_input("Ask a question")
 
 if question:
     st.info(f"You asked: {question}")
