@@ -283,7 +283,7 @@ st.header("🖥️ OpenEdge")
 
 st.subheader("What is OpenEdge?")
 
-st.write(""
+st.write("""
 OpenEdge is Progress Software's application development platform
 and database used to build, deploy, and manage business-critical
 applications.
