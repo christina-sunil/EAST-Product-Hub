@@ -286,8 +286,7 @@ st.subheader("What is OpenEdge?")
 st.write("""
 OpenEdge is Progress Software's application development platform
 and database used to build, deploy, and manage business-critical
-applications.
-""")
+applications.""")
 
 st.subheader("🧩 OpenEdge Features")
 st.write("""
@@ -301,4 +300,12 @@ st.write("""
 • Secure Data Management
 
 • Scalability
+
+• Cloud Deployment Support
+""")
+
+st.subheader("📚 Knowledge Base")
+st.markdown("""
+- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
+""")
 
