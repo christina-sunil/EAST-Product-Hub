@@ -113,9 +113,13 @@ if selected == "ShareFile":
 
     st.subheader("📚 Useful KBs")
 
-    st.write("""
-    Add internal knowledge base articles here.
-    """)
+    st.markdown("""
+
+### ShareFile Resources
+
+ 
+- [Order Services Published Articles](https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=Copy_of_Published_Articles)
+""")
 
     st.subheader("💡 What I've Learned")
 
