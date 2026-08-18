@@ -7,302 +7,138 @@ st.set_page_config(
 )
 
 st.title("🚀 EAST Product Hub")
-st.write("Welcome to the EAST Product Hub")
 
-selected = st.selectbox(
-    "Select Product",
-    [
-        "ShareFile",
-        "MOVEit",
-        "OpenEdge"
-    ]
-)
+products = [
+    "ShareFile",
+    "MOVEit",
+    "OpenEdge",
+    "WhatsUp Gold",
+    "Flowmon",
+    "Chef",
+    "Telerik",
+    "MarkLogic",
+    "LoadMaster"
+]
 
-st.success(f"Selected Product: {selected}")
+selected = st.selectbox("Select Product", products)
 
-# =====================================================
-# SHAREFILE
-# =====================================================
+# URLs
+SHAREFILE_KB = "https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=Copy_of_Published_Articles"
+PROGRESS_KB = "https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles"
 
 if selected == "ShareFile":
 
     st.header("📁 ShareFile")
 
-    st.subheader("What is ShareFile?")
-
     st.write("""
     ShareFile is a secure file sharing and content collaboration platform.
-    Organizations use it to securely store, manage and share documents with
-    employees, customers and partners.
     """)
 
     st.subheader("🧩 Key Features")
 
     st.write("""
     • Secure File Sharing
-
     • Client Portal
-
-    • Document Storage
-
     • Workflow Automation
-
-    • Electronic Signatures
-
-    • User Management
-
     • Folder Permissions
-
-    • Secure Sharing Links
-
     • Mobile Access
-
     • File Sync
     """)
 
-    st.subheader("🎫 Common EAST Tickets")
-
-    st.write("""
-    • User access issues
-
-    • Folder permission problems
-
-    • Login failures
-
-    • Upload failures
-
-    • Shared link issues
-
-    • Sync issues
-    """)
-
-    st.subheader("📚 Knowledge Base")
-
-    st.markdown("""
-    - [ShareFile Knowledge Articles](https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=Copy_of_Published_Articles)
-    """)
-
-    st.subheader("🎓 New Hire Learning Path")
-
-    st.write("""
-    Week 1
-    • Learn ShareFile basics
-
-    Week 2
-    • Review common tickets
-
-    Week 3
-    • Handle basic cases
-
-    Week 4
-    • Learn escalation paths
-    """)
-
-# =====================================================
-# MOVEIT
-# =====================================================
-
-elif selected == "MOVEit":
+    st.markdown(f"[ShareFile Knowledge Base]({SHAREFILEOVEit":
 
     st.header("📦 MOVEit")
 
-    st.subheader("What is MOVEit?")
-
     st.write("""
-    MOVEit is a Managed File Transfer (MFT) solution that securely transfers
-    sensitive files between systems, organizations and users.
+    MOVEit is a Managed File Transfer (MFT) solution used for secure data transfers.
     """)
 
-    st.subheader("🧩 MOVEit Features")
+    st.subheader("🧩 Key Features")
 
     st.write("""
     • Secure File Transfer
-
     • Transfer Automation
-
     • Encryption
-
-    • Compliance Reporting
-
-    • Audit Logs
-
-    • Role-Based Access
-
-    • Workflow Automation
-
-    • Scheduled Transfers
-
-    • Secure External Transfer
+    • Audit Logging
+    • Compliance Support
     """)
 
-    st.subheader("🎯 Why Customers Use MOVEit")
-
-    st.write("""
-    • Secure sensitive data
-
-    • Meet compliance requirements
-
-    • Automate transfers
-
-    • Reduce manual work
-
-    • Improve reliability
-    """)
-
-    st.subheader("🏗️ MOVEit Components")
-
-    st.write("""
-    • MOVEit Transfer
-
-    • MOVEit Automation
-
-    • Users & Groups
-
-    • Hosts
-
-    • Secure Folders
-
-    • Transfer Tasks
-
-    • Audit Logs
-    """)
-
-    st.subheader("🎫 Common EAST Tickets")
-
-    st.write("""
-    • Failed file transfers
-
-    • User access issues
-
-    • Authentication failures
-
-    • Certificate problems
-
-    • Task failures
-
-    • Connectivity issues
-    """)
-
-    st.subheader("📚 Knowledge Base")
-
-    st.markdown("""
-    - [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
-    """)
-
-    st.subheader("🎓 New Hire Learning Path")
-
-    st.write("""
-    Week 1
-    • Learn MOVEit fundamentals
-
-    Week 2
-    • Understand Transfer & Automation
-
-    Week 3
-    • Troubleshoot common issues
-
-    Week 4
-    • Learn escalation guidelines
-    """)
-
-# =====================================================
-# OPENEDGE
-# =====================================================
-
-elif selected == "OpenEdge":
+    st.markdown(f"[Progress Knowledge Base]({ted == "OpenEdge":
 
     st.header("🖥️ OpenEdge")
 
-    st.subheader("What is OpenEdge?")
-
     st.write("""
-    OpenEdge is Progress Software's application development platform and
-    database used to build, deploy and manage business-critical applications.
+    OpenEdge is a business application development platform and database.
     """)
 
-    st.subheader("🧩 OpenEdge Features")
+    st.subheader("🧩 Key Features")
 
     st.write("""
     • Application Development
-
-    • Relational Database
-
-    • Business Logic Processing
-
-    • Secure Data Management
-
+    • Database Platform
+    • Business Logic
     • Scalability
-
-    • Cloud Deployment Support
     """)
 
-    st.subheader("🎯 Why Customers Use OpenEdge")
+    st.markdown(f"[Progress Knowledge Baselected == "WhatsUp Gold":
+
+    st.header("📊 WhatsUp Gold")
 
     st.write("""
-    • Build business applications
-
-    • Manage enterprise data
-
-    • Improve performance
-
-    • Support mission-critical workloads
-
-    • Long-term platform stability
+    WhatsUp Gold is an IT infrastructure monitoring solution.
     """)
 
-    st.subheader("🏗️ OpenEdge Components")
+    st.markdown(f"[Progress_KB}")
+
+elif selected == "Flowmon":
+
+    st.header("🌐 Flowmon")
 
     st.write("""
-    • OpenEdge Database
-
-    • AppServer
-
-    • WebSpeed
-
-    • OpenEdge Management
-
-    • OpenEdge Studio
+    Flowmon provides network visibility and security monitoring.
     """)
 
-    st.subheader("🎫 Common EAST Tickets")
+    st.markdown(f"[Progress Knowledge Base]({ted == "Chef":
+
+    st.header("⚙️ Chef")
 
     st.write("""
-    • Database connectivity issues
-
-    • Performance issues
-
-    • Application startup failures
-
-    • User access issues
-
-    • Backup and recovery questions
+    Chef is an infrastructure automation platform.
     """)
 
-    st.subheader("📚 Knowledge Base")
+    st.markdown(f"{PROGRESS_KB}")
 
-    st.markdown("""
-    - [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
-    """)
+elif selected == "Telerik":
 
-    st.subheader("🎓 New Hire Learning Path")
+    st.header("💻 Telerik")
 
     st.write("""
-    Week 1
-    • Learn OpenEdge fundamentals
-
-    Week 2
-    • Understand OpenEdge architecture
-
-    Week 3
-    • Review common support cases
-
-    Week 4
-    • Learn troubleshooting and escalation
+    Telerik provides UI controls and developer tools.
     """)
 
-# =====================================================
-# ASK EAST AI
-# =====================================================
+    st.markdown(f"{PROGRESS_KB}")
+
+elif selected == "MarkLogic":
+
+    st.header("🗄️ MarkLogic")
+
+    st.write("""
+    MarkLogic is an enterprise data platform and database.
+    """)
+
+    st.markdown(f"{PROGRESS_KB}")
+
+elif selected == "LoadMaster":
+
+    st.header("⚖️ LoadMaster")
+
+    st.write("""
+    LoadMaster is a load balancing and application delivery solution.
+    """)
+
+    st.markdown(f"{PROGRESS_KB}")
+
+st.divider()
 
 st.header("🤖 Ask EAST AI")
 
@@ -310,249 +146,3 @@ question = st.text_input("Ask a question")
 
 if question:
     st.info(f"You asked: {question}")
-
-# =====================================================
-
-# WHATSUP GOLD
-
-# =====================================================
-
-
-elif selected == "WhatsUp Gold":
-
-st.header("📊 WhatsUp Gold")
-
-st.subheader("What is WhatsUp Gold?")
-
-st.write("""
-WhatsUp Gold is an IT infrastructure monitoring platform used to monitor
-
-networks, servers, applications, cloud environments, and devices.
-""")
-
-st.subheader("🧩 Key Features")
-
-st.write("""
-
-• Network Monitoring
-
-• Server Monitoring
-
-• Application Monitoring
-
-• Performance Monitoring
-
-• Alerting
-
-• Reporting
-
-""")
-
-st.subheader("📚 Knowledge Base")
-
-st.markdown("""
-- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
-""")
-
-# =====================================================
-
-# FLOWMON
-
-# =====================================================
-
-elif selected == "Flowmon":
-
-st.header("🌐 Flowmon")
-
-st.subheader("What is Flowmon?")
-
-st.write("""
-Flowmon is a network visibility, performance monitoring,
-
-and cybersecurity solution.
-""")
-
-st.subheader("🧩 Key Features")
-
-st.write("""
-
-• Network Monitoring
-
-• Traffic Analysis
-
-• Threat Detection
-
-• Security Analytics
-
-• Performance Monitoring
-
-• Incident Investigation
-""")
-
-st.subheader("📚 Knowledge Base")
-st.markdown("""
-
-- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
-""")
-
-# =====================================================
-
-# CHEF
-
-# =====================================================
-
-elif selected == "Chef":
-
-st.header("⚙️ Chef")
-
-st.subheader("What is Chef?")
-
-st.write("""
-
-Chef is an infrastructure automation platform used to automate
-
-server configuration, deployment, and compliance management.
-""")
-
-st.subheader("🧩 Key Features")
-st.write("""
-
-• Configuration Management
-
-• Infrastructure Automation
-
-• Compliance Automation
-
-• Continuous Delivery
-
-• Policy Enforcement
-""")
-
-st.subheader("📚 Knowledge Base")
-st.markdown("""
-
-- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
-""")
-
-# =====================================================
-
-# TELERIK
-
-# =====================================================
-
-elif selected == "Telerik":
-
-st.header("💻 Telerik")
-
-st.subheader("What is Telerik?")
-
-st.write("""
-
-Telerik provides UI controls, reporting tools, and developer
-
-productivity solutions for .NET and JavaScript applications.
-
-""")
-
-st.subheader("🧩 Key Features")
-st.write("""
-
-• UI Components
-
-• Reporting
-
-• Document Processing
-
-• Testing Tools
-
-• Developer Productivity
-
-""")
-
-st.subheader("📚 Knowledge Base")
-
-st.markdown("""
-- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
-""")
-
-# =====================================================
-
-# MARKLOGIC
-
-# =====================================================
-
-elif selected == "MarkLogic":
-
-st.header("🗄️ MarkLogic")
-
-st.subheader("What is MarkLogic?")
-st.write("""
-
-MarkLogic is an enterprise-grade database platform used for
-managing structured and unstructured data.
-""")
-
-st.subheader("🧩 Key Features")
-
-st.write("""
-
-• Enterprise Database
-
-• Search Capabilities
-
-• Data Integration
-
-• Security
-
-• Semantics
-
-• Scalability
-
-""")
-
-st.subheader("📚 Knowledge Base")
-
- 
-st.markdown("""
-- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
-""")
-
-# =====================================================
-
-# LOADMASTER
-
-# =====================================================
-
-elif selected == "LoadMaster":
-
-st.header("⚖️ LoadMaster")
-
-st.subheader("What is LoadMaster?")
-st.write("""
-LoadMaster is a load balancing and application delivery controller
-
-used to improve application performance, security, and availability.
-""")
-
-st.subheader("🧩 Key Features")
-st.write("""
-
-• Load Balancing
-
-• High Availability
-
-• SSL Offloading
-
-• Application Security
-
-• Traffic Management
-
-• Disaster Recovery
-183
-""")
-
-st.subheader("📚 Knowledge Base")
-
-st.markdown("""
-- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
-""")
