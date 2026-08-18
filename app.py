@@ -45,9 +45,9 @@ if selected == "ShareFile":
     • File Sync
     """)
 
-    st.markdown(
-"[ShareFile Knowledge Base](https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=Copy_of_Published_Articles)"
-)
+    st.markdown("[ShareFile Knowledge Base]
+    (https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?
+     filterName=Copy_of_Published_Articles)")
 
     st.header("📦 MOVEit")
 
@@ -65,7 +65,9 @@ if selected == "ShareFile":
     • Compliance Support
     """)
 
-    st.markdown(f"[Progress Knowledge Base]({ted == "OpenEdge":
+    st.markdown("[Progress Knowledge Base]
+    (https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?
+     filterName=EA_Ops_Knowledge_Published_Articles)")
 
     st.header("🖥️ OpenEdge")
 
