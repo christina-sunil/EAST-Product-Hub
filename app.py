@@ -310,3 +310,249 @@ question = st.text_input("Ask a question")
 
 if question:
     st.info(f"You asked: {question}")
+
+# =====================================================
+
+# WHATSUP GOLD
+
+# =====================================================
+
+
+elif selected == "WhatsUp Gold":
+
+st.header("📊 WhatsUp Gold")
+
+st.subheader("What is WhatsUp Gold?")
+
+st.write("""
+WhatsUp Gold is an IT infrastructure monitoring platform used to monitor
+
+networks, servers, applications, cloud environments, and devices.
+""")
+
+st.subheader("🧩 Key Features")
+
+st.write("""
+
+• Network Monitoring
+
+• Server Monitoring
+
+• Application Monitoring
+
+• Performance Monitoring
+
+• Alerting
+
+• Reporting
+
+""")
+
+st.subheader("📚 Knowledge Base")
+
+st.markdown("""
+- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
+""")
+
+# =====================================================
+
+# FLOWMON
+
+# =====================================================
+
+elif selected == "Flowmon":
+
+st.header("🌐 Flowmon")
+
+st.subheader("What is Flowmon?")
+
+st.write("""
+Flowmon is a network visibility, performance monitoring,
+
+and cybersecurity solution.
+""")
+
+st.subheader("🧩 Key Features")
+
+st.write("""
+
+• Network Monitoring
+
+• Traffic Analysis
+
+• Threat Detection
+
+• Security Analytics
+
+• Performance Monitoring
+
+• Incident Investigation
+""")
+
+st.subheader("📚 Knowledge Base")
+st.markdown("""
+
+- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
+""")
+
+# =====================================================
+
+# CHEF
+
+# =====================================================
+
+elif selected == "Chef":
+
+st.header("⚙️ Chef")
+
+st.subheader("What is Chef?")
+
+st.write("""
+
+Chef is an infrastructure automation platform used to automate
+
+server configuration, deployment, and compliance management.
+""")
+
+st.subheader("🧩 Key Features")
+st.write("""
+
+• Configuration Management
+
+• Infrastructure Automation
+
+• Compliance Automation
+
+• Continuous Delivery
+
+• Policy Enforcement
+""")
+
+st.subheader("📚 Knowledge Base")
+st.markdown("""
+
+- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
+""")
+
+# =====================================================
+
+# TELERIK
+
+# =====================================================
+
+elif selected == "Telerik":
+
+st.header("💻 Telerik")
+
+st.subheader("What is Telerik?")
+
+st.write("""
+
+Telerik provides UI controls, reporting tools, and developer
+
+productivity solutions for .NET and JavaScript applications.
+
+""")
+
+st.subheader("🧩 Key Features")
+st.write("""
+
+• UI Components
+
+• Reporting
+
+• Document Processing
+
+• Testing Tools
+
+• Developer Productivity
+
+""")
+
+st.subheader("📚 Knowledge Base")
+
+st.markdown("""
+- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
+""")
+
+# =====================================================
+
+# MARKLOGIC
+
+# =====================================================
+
+elif selected == "MarkLogic":
+
+st.header("🗄️ MarkLogic")
+
+st.subheader("What is MarkLogic?")
+st.write("""
+
+MarkLogic is an enterprise-grade database platform used for
+managing structured and unstructured data.
+""")
+
+st.subheader("🧩 Key Features")
+
+st.write("""
+
+• Enterprise Database
+
+• Search Capabilities
+
+• Data Integration
+
+• Security
+
+• Semantics
+
+• Scalability
+
+""")
+
+st.subheader("📚 Knowledge Base")
+
+ 
+st.markdown("""
+- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
+""")
+
+# =====================================================
+
+# LOADMASTER
+
+# =====================================================
+
+elif selected == "LoadMaster":
+
+st.header("⚖️ LoadMaster")
+
+st.subheader("What is LoadMaster?")
+st.write("""
+LoadMaster is a load balancing and application delivery controller
+
+used to improve application performance, security, and availability.
+""")
+
+st.subheader("🧩 Key Features")
+st.write("""
+
+• Load Balancing
+
+• High Availability
+
+• SSL Offloading
+
+• Application Security
+
+• Traffic Management
+
+• Disaster Recovery
+183
+""")
+
+st.subheader("📚 Knowledge Base")
+
+st.markdown("""
+- [Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)
+""")
