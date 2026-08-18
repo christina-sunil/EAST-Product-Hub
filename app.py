@@ -30,8 +30,24 @@ st.write("""
 ShareFile is a secure file sharing and content collaboration platform
 used to store, manage and share files securely with customers,
 partners and internal teams.
+""")
+
 st.subheader("🧩 Key Features")
+
 st.write("""
+- Secure File Sharing
+
+- Client Portal
+
+- Workflow Automation
+
+- Folder Permissions
+
+- Mobile Access
+
+- File Sync
+""")
+
 • Secure File Sharing
 
 • Client Portal
