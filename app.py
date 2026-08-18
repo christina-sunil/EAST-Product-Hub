@@ -24,10 +24,50 @@ products = [
 selected = st.selectbox("Select Product", products)
 
 if selected == "ShareFile":
-    st.header("📁 ShareFile")
-    st.write("ShareFile is a secure file sharing and content collaboration platform.")
-    st.subheader("Knowledge Base")
-    st.markdown("[ShareFile Knowledge Base](https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=Copy_of_Published_Articles)")
+st.header("📁 ShareFile")
+st.subheader("What is ShareFile?")
+st.write("""
+ShareFile is a secure file sharing and content collaboration platform
+used to store, manage and share files securely with customers,
+partners and internal teams.
+st.subheader("🧩 Key Features")
+st.write("""
+• Secure File Sharing
+
+• Client Portal
+
+• Workflow Automation
+
+• Folder Permissions
+
+• Mobile Access
+
+• File Sync
+""")
+
+st.subheader("🎫 Common EAST Tickets")
+st.write("""
+
+• ShareFile access requests
+
+• User role and permission updates
+
+• Intranet content access issues
+
+• Bulk file sync requests
+
+• Bulk file export requests
+
+• ShareFile and Salesforce integration questions
+
+• Shared folder access issues
+""")
+
+st.subheader("📚 Knowledge Base")
+
+st.markdown(
+"[ShareFile Knowledge Base](https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=Copy_of_Published_Articles)"
+)
 
 elif selected == "MOVEit":
     st.header("📦 MOVEit")
