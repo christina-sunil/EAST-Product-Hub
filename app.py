@@ -45,7 +45,9 @@ if selected == "ShareFile":
     • File Sync
     """)
 
-    st.markdown(f"[ShareFile Knowledge Base]({SHAREFILEOVEit":
+    st.markdown(
+"[ShareFile Knowledge Base](https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=Copy_of_Published_Articles)"
+)
 
     st.header("📦 MOVEit")
 
