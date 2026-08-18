@@ -7,6 +7,7 @@ st.set_page_config(
 )
 
 st.title("🚀 EAST Product Hub")
+st.write("Welcome to the EAST Product Hub")
 
 products = [
     "ShareFile",
@@ -22,7 +23,6 @@ products = [
 
 selected = st.selectbox("Select Product", products)
 
-# URLs
 SHAREFILE_KB = "https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=Copy_of_Published_Articles"
 PROGRESS_KB = "https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles"
 
@@ -45,9 +45,9 @@ if selected == "ShareFile":
     • File Sync
     """)
 
-    st.markdown("[ShareFile Knowledge Base]
-    (https://sharefile.lightning.force.com/lightning/o/Knowledge__kav/list?
-     filterName=Copy_of_Published_Articles)")
+    st.markdown(f"{SHAREFILE_KB}")
+
+elif selected == "MOVEit":
 
     st.header("📦 MOVEit")
 
@@ -65,9 +65,9 @@ if selected == "ShareFile":
     • Compliance Support
     """)
 
-    st.markdown("[Progress Knowledge Base]
-    (https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?
-     filterName=EA_Ops_Knowledge_Published_Articles)")
+    st.markdown(f"{PROGRESS_KB}")
+
+elif selected == "OpenEdge":
 
     st.header("🖥️ OpenEdge")
 
@@ -92,9 +92,7 @@ if selected == "ShareFile":
     WhatsUp Gold is an IT infrastructure monitoring solution.
     """)
 
-    st.markdown(f"[Progress_KB}")
-
-elif selected == "Flowmon":
+    st.markdown(f"[Progress Knowledge Base]({ted == "Flowmon":
 
     st.header("🌐 Flowmon")
 
@@ -102,7 +100,7 @@ elif selected == "Flowmon":
     Flowmon provides network visibility and security monitoring.
     """)
 
-    st.markdown(f"[Progress Knowledge Base]({ted == "Chef":
+    st.markdown(f"[Progress Knowledge f selected == "Chef":
 
     st.header("⚙️ Chef")
 
@@ -110,9 +108,7 @@ elif selected == "Flowmon":
     Chef is an infrastructure automation platform.
     """)
 
-    st.markdown(f"{PROGRESS_KB}")
-
-elif selected == "Telerik":
+    st.markdown(f"[Progress Knowledge Baselected == "Telerik":
 
     st.header("💻 Telerik")
 
