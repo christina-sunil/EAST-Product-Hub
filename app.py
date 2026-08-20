@@ -388,38 +388,11 @@ application performance, availability and security.
         "[Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)"
     )
 else:
-
-    st.header(selected)
-
+st.header(selected)
+    
 st.subheader("Business Unit")
-
-if selected in [
-"Agentic RAG",
-"Corticon",
-"DataDirect",
-"Data Platform",
-"MarkLogic",
-"OpenEdge",
-"Semaphore"
-]:
-st.write("Application & Data Platform (ADP)")
-
-elif selected in [
-"Fiddler",
-"Kendo UI",
-"Automate MFT",
-"MOVEit",
-"WS_FTP",
-"Podio",
-"ShareFile",
-"Sitefinity",
-"Telerik",
-"Test Studio"
-]:
-st.write("Digital Experience (DX)")
-
-else:
-st.write("Infrastructure Management")
+    
+st.write("To be confirmed")
 
 st.subheader("👤 Product Owner")
 
@@ -436,6 +409,23 @@ st.write("To be confirmed")
 st.subheader("📚 Knowledge Base")
 
 st.write("Content coming soon.")
+
+
+st.subheader("👤 Product Owner")
+
+    st.write("To be confirmed")
+
+st.subheader("🎯 SME / Product Contacts")
+
+    st.write("To be confirmed")
+
+st.subheader("🛠️ Tools Used")
+
+    st.write("To be confirmed")
+
+st.subheader("📚 Knowledge Base")
+
+    st.write("Content coming soon.")
 
 st.divider()
 
