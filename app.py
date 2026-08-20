@@ -388,36 +388,25 @@ application performance, availability and security.
         "[Progress Knowledge Base](https://progress.lightning.force.com/lightning/o/Knowledge__kav/list?filterName=EA_Ops_Knowledge_Published_Articles)"
     )
 else:
+
 st.header(selected)
-    
+
 st.subheader("Business Unit")
-    
 st.write("To be confirmed")
 
 st.subheader("👤 Product Owner")
-
 st.write("To be confirmed")
 
 st.subheader("🎯 SME / Product Contacts")
-
 st.write("To be confirmed")
 
 st.subheader("🛠️ Tools Used")
-
 st.write("To be confirmed")
 
 st.subheader("📚 Knowledge Base")
-
 st.write("Content coming soon.")
 
-
-st.subheader("👤 Product Owner")
-
-    st.write("To be confirmed")
-
-st.subheader("🎯 SME / Product Contacts")
-
-    st.write("To be confirmed")
+st.divider()
 
 st.subheader("🛠️ Tools Used")
 
