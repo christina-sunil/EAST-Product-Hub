@@ -393,16 +393,33 @@ else:
 
 st.subheader("Business Unit")
 
-if selected in ["Agentic RAG", "Corticon", "DataDirect", "Data 
-Platform", "MarkLogic", "OpenEdge", "Semaphore"]:
-   st.write("Application & Data Platform (ADP)")
+if selected in [
+"Agentic RAG",
+"Corticon",
+"DataDirect",
+"Data Platform",
+"MarkLogic",
+"OpenEdge",
+"Semaphore"
+]:
+st.write("Application & Data Platform (ADP)")
 
-elif selected in ["Fiddler", "Kendo UI", "Automate MFT", "MOVEit", 
-"WS_FTP", "Podio", "ShareFile", "Sitefinity", "Telerik", "Test Studio"]:
-   st.write("Digital Experience (DX)")
+elif selected in [
+"Fiddler",
+"Kendo UI",
+"Automate MFT",
+"MOVEit",
+"WS_FTP",
+"Podio",
+"ShareFile",
+"Sitefinity",
+"Telerik",
+"Test Studio"
+]:
+st.write("Digital Experience (DX)")
 
 else:
-   st.write("Infrastructure Management")
+st.write("Infrastructure Management")
 
 st.subheader("👤 Product Owner")
 
