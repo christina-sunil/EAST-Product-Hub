@@ -10,15 +10,28 @@ st.title("🚀 EAST Product Hub")
 st.write("Welcome to the EAST Product Hub")
 
 products = [
-    "ShareFile",
-    "MOVEit",
-    "OpenEdge",
-    "WhatsUp Gold",
-    "Flowmon",
-    "Chef",
-    "Telerik",
-    "MarkLogic",
-    "LoadMaster"
+"ShareFile",
+"MOVEit",
+"OpenEdge",
+"WhatsUp Gold",
+"Flowmon",
+"Chef",
+"Telerik",
+"MarkLogic",
+"LoadMaster",
+"Agentic RAG",
+"Corticon",
+"DataDirect",
+"Data Platform",
+"Semaphore",
+"Fiddler",
+"Kendo UI",
+"Automate MFT",
+"WS_FTP",
+"Podio",
+"Sitefinity",
+"Test Studio",
+"Opsmith"
 ]
 
 selected = st.selectbox("Select Product", products)
