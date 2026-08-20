@@ -389,7 +389,7 @@ application performance, availability and security.
     )
 else:
 
-st.header(selected)
+    st.header(selected)
 
 st.subheader("Business Unit")
 st.write("To be confirmed")
