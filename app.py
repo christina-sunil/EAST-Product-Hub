@@ -389,26 +389,26 @@ application performance, availability and security.
     )
 else:
 
-st.header(selected)
+    st.header(selected)
 
-st.subheader("Business Unit")
-st.write("To be confirmed")
+    st.subheader("Business Unit")
+    st.write("To be confirmed")
 
-st.subheader("👤 Product Owner")
-st.write("To be confirmed")
+    st.subheader("👤 Product Owner")
+    st.write("To be confirmed")
 
-st.subheader("🎯 SME / Product Contacts")
-st.write("To be confirmed")
+    st.subheader("🎯 SME / Product Contacts")
+    st.write("To be confirmed")
 
-st.subheader("🛠️ Tools Used")
-st.write("To be confirmed")
+    st.subheader("🛠️ Tools Used")
+    st.write("To be confirmed")
 
-st.subheader("📚 Knowledge Base")
-st.write("Content coming soon.")
+    st.subheader("📚 Knowledge Base")
+    st.write("Content coming soon.")
 
-st.divider()
+    st.divider()
 
-st.subheader("🛠️ Tools Used")
+    st.subheader("🛠️ Tools Used")
 
     st.write("To be confirmed")
 
